@@ -1,0 +1,134 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    /*background-color: #1e1e1e;*/
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+    background-size:cover;
+}
+
+/* Container for the form and message */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Form container styling */
+form {
+    background-color:rgb(15, 2, 61);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 70px;
+    padding: 50px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Form heading (centered above the form) */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0b7a4;
+    margin-bottom: 20px;
+}
+
+/* Labels and inputs styling */
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #f0b7a4;
+    outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+    background-color: #f0b7a4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff8c66;
+}
+
+/* Message styling */
+#message {
+    font-size: 14px;
+    color: #f0b7a4;
+    margin-left: 10px;
+}
+
+/* Flexbox for horizontal line with message */
+.horizontal-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Add a horizontal line */
+.horizontal-line::before {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #444;
+    margin-right: 10px;
+}
+
+.horizontal-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #444;
+    margin-left: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
