@@ -77,8 +77,8 @@ button[type="submit"] {
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
-    color: #1e1e1e;
-    background-color: #f0b7a4;
+    color: white;
+    background-color: #3e1d8a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -92,7 +92,7 @@ button[type="submit"]:hover {
 /* Message styling */
 #message {
     font-size: 14px;
-    color: #f0b7a4;
+    color: #f0a4ec;
     margin-left: 10px;
 }
 
